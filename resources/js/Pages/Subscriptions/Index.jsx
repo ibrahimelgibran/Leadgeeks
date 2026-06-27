@@ -285,7 +285,7 @@ export default function SubscriptionsIndex() {
                                 </option>
                                 {statusOptions.map((value) => (
                                     <option key={value} value={value}>
-                                        {value}
+                                        {statusLabels[language][value] || value}
                                     </option>
                                 ))}
                             </select>
